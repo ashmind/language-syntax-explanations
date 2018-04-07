@@ -1,0 +1,9 @@
+- ast:  ["TupleType", "TupleExpression"]
+  name: tuple
+  text: Tuples are types that group several values together.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/tuples
+
+- ast:  ["ParenthesizedLambdaExpression", "SimpleLambdaExpression"]
+  name: lambda expression
+  text: Lambda expressions are a kind of anonymous functions — pieces of code that can be passed around.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions
