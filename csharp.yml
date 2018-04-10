@@ -1,9 +1,20 @@
-# C# 6 and before
+# C# 2
+
+- name: anonymous method
+  text: |
+    Anonymous methods are blocks of code that can be passed around.  
+    In modern C#, _lambda expressions_ provide a shorter syntax.
+
+    For example, `delegate(int a) { return a + 1; }` can be shortened to `a => a + 1`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-methods
+  match: [AnonymousMethodExpression]
+
+# C# 3-6
 
 # TODO: null conditions, string interpolation, async/await, nameof, extension methods
 
 - name: lambda expression
-  text: "Lambda expressions are a kind of anonymous functions — pieces of code that can be passed around."
+  text: "Lambda expressions are a kind of anonymous functions — blocks of code that can be passed around."
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions
   match: [ParenthesizedLambdaExpression, SimpleLambdaExpression]
 
