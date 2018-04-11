@@ -1,3 +1,14 @@
+# C# 1
+
+- name: finalizer 
+  text: |
+    Finalizers (or destructors) are methods automatically called by Garbage Collector before collecting the object.  
+    They are used for last-chance cleanup of unmanaged resources (e.g. files) or memory.
+
+    Also see `IDisposable` \[[Docs](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/dispose-pattern)\] for a more predictables cleanup approach.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/destructors
+  match: [DestructorDeclaration]
+
 # C# 2
 
 - name: anonymous method
@@ -55,7 +66,7 @@
 # C# 7.1
 
 - name: default literal
-  text: "Syntax `default` can be used instead of `default(SomeType)` in cases where compiler can automatically identify the type."
+  text: "Syntax `default` can be used instead of `default(SomeType)` when compiler can automatically identify the type."
   link: https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7-1#default-literal-expressions
   match: [DefaultLiteralExpression]
 
