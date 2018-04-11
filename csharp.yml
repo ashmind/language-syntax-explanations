@@ -5,7 +5,7 @@
     Finalizers (or destructors) are methods automatically called by Garbage Collector before collecting the object.  
     They are used for last-chance cleanup of unmanaged resources (e.g. files) or memory.
 
-    Also see `IDisposable` \[[Docs](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/dispose-pattern)\] for a more predictables cleanup approach.
+    Also see `IDisposable` \[[Docs](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/dispose-pattern)\] for a predictables cleanup approach.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/destructors
   match: [DestructorDeclaration]
 
@@ -20,14 +20,14 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-methods
   match: [AnonymousMethodExpression]
 
-# C# 3-6
-
-# TODO: null conditions, string interpolation, async/await, nameof, extension methods
+# C# 3
 
 - name: lambda expression
   text: "Lambda expressions are a kind of anonymous functions — blocks of code that can be passed around."
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions
   match: [ParenthesizedLambdaExpression, SimpleLambdaExpression]
+
+# C# 6
 
 - name: expression-bodied member
   text: |
@@ -36,6 +36,13 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#expression-bodied-function-members
   match: [ArrowExpressionClause]
   scope: parent
+
+- name: string interpolation
+  text: |
+    String interpolation allows values to be placed directly into a string using `{}`.  
+    For example, if `a` is `1`, `$"result: {a + 1}"` produces `"result: 2"`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#string-interpolation
+  match: [InterpolatedStringExpression]
 
 # C# 7
 
