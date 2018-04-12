@@ -16,12 +16,23 @@
 
 # C# 2
 
+- name: generic
+  text: |
+    Generics allow types and methods that are not tied to a specific type until used.  
+    Different parts of code might use the same generic with different types.
+    
+    For example, `List<T>` can be created as `List<int>` or `List<string>`.  
+    However, once created, `List<int>` will only accept `int` values.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/index
+  match: [TypeParameterList]
+  scope: parent
+
 - name: anonymous method
   text: |
     Anonymous methods are blocks of code that can be passed around.  
     In modern C#, _lambda expressions_ provide a shorter syntax.
 
-    For example, `delegate(int a) { return a + 1; }` can be shortened to `a => a + 1`.
+    For example, `delegate(int a) { return a + 1; }` is equivalent to `a => a + 1`.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-methods
   match: [AnonymousMethodExpression]
 
