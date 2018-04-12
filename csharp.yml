@@ -1,5 +1,10 @@
 # C# 1
 
+- name: bitwise complement operator
+  text: "Bitwise complement operator inverts all bits of a given number."
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-complement-operator
+  match: [BitwiseNotExpression]
+
 - name: finalizer 
   text: |
     Finalizers (or destructors) are methods automatically called by Garbage Collector before collecting the object.  
