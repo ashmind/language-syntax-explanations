@@ -45,6 +45,13 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-methods
   match: [AnonymousMethodExpression]
 
+- name: nullable type
+  text: |
+    Nullable types extend their base types to allow `null` values.  
+    For example, `int? i = null` is allowed, even though `int i = null` is not.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/nullable-types/index
+  match: [NullableType]
+
 # C# 3
 
 - name: lambda expression
@@ -56,7 +63,7 @@
 
 - name: expression-bodied member
   text: |
-    Expression bodies is a compact way to represent simple single-line methods and properties.  
+    Expression bodies are a compact way to represent simple single-line methods and properties.  
     For example, `int M() { return 3; }` can be simplified to `int M() => 3`.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#expression-bodied-function-members
   match: [ArrowExpressionClause]
