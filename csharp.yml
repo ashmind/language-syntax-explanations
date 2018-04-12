@@ -27,6 +27,15 @@
   match: [TypeParameterList]
   scope: parent
 
+- name: generic constraint
+  text: |
+    Generic constraints require types used by the generic to match a certain condition.
+
+    For example, `C<T> where T: struct` means that only value types will be allowed as `T`.  
+    In this case, you can use `C<int>` and `C<byte>` -- but not `C<string>`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters
+  match: [TypeParameterConstraintClause]
+
 - name: anonymous method
   text: |
     Anonymous methods are blocks of code that can be passed around.  
