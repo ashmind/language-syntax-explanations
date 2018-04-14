@@ -71,7 +71,6 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions
   match: [ParenthesizedLambdaExpression, SimpleLambdaExpression]
 
-
 - name: anonymous type
   text: |
     Syntax `new {}` creates an object that has specified properties, but doesn't have a named type.
@@ -79,10 +78,26 @@
     Since there is no type, these objects are mostly used with `var`.  
     As methods can't have `var` returns or parameters, anonymous types are often defined and used within the same method.
 
-    In modern C#, _tuples_ provide similar features  — and can be used for returns and parameters.  
+    In modern C#, _tuples_ provide similar features — and can be used for returns and parameters.  
     For example, `new { a = 1, b = 2 }` can often be rewritten as a tuple: `(a: 1, b: 2)`.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types
   match: [AnonymousObjectCreationExpression]
+
+- name: query expression
+  text: |
+    Query expression is a special syntax available for certain well-known method names.  
+    For example:
+    ```
+    // Query expressions
+    from a in listOfA where a > 0 select a + 1
+
+    // Method calls (same thing)
+    listOfA.Where(a => a > 0).Select(a => a + 1)
+    ```
+
+    Query expressions are a part of LINQ — however not all LINQ methods support special syntax.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/linq/query-expression-basics
+  match: [QueryExpression]
 
 # C# 6
 
@@ -138,8 +153,9 @@
 
 # TODO: ref structs and so on (needs better matching, maybe SourcePath)
 
-- name: in parameter
-  text: "In parameters are in essence `ref readonly` — passed by reference, but cannot be changed by the method."
-  link: https://docs.microsoft.com/en-us/dotnet/csharp/reference-semantics-with-value-types#passing-arguments-by-readonly-reference
-  match: [InKeyword]
-  scope: parent
+# Needs a better matcher, otherwise ambiguous with query expressions
+# - name: in parameter
+#   text: "In parameters are in essence `ref readonly` — passed by reference, but cannot be changed by the method."
+#   link: https://docs.microsoft.com/en-us/dotnet/csharp/reference-semantics-with-value-types#passing-arguments-by-readonly-reference
+#   match: [InKeyword]
+#   scope: parent

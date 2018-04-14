@@ -29,6 +29,16 @@ code {
     padding: 1px 5px;
 }
 
+pre {
+    margin: 0;
+    padding: 5px;
+    background-color: #efefef;
+}
+
+pre code {
+    padding: 0;
+}
+
 .disclaimer {
     background-color: #ffeb90;
 }
