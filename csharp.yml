@@ -52,6 +52,18 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/nullable-types/index
   match: [NullableType]
 
+- name: iterator syntax
+  text: |
+    Iterator methods return `IEnumerable`, which is a sequence of values.  
+    However, instead of all values at once, they return the values one by one.
+
+    Each `yield return` returns one value, and "pauses" the method until calling code asks for more.  
+    For example: <a href="https://sharplab.io/#v2:C4LgTgrgdgNAJiA1AHwAIAYAEqCMBuAWACgNscAWQo41AZjIDZsAmMgdkwG9jNft7cTVOTIAOABQBKLjz5zcATnEAiAEoBTAI4R1AZ2ABLKAHNMANwCGAGx3LJVOXIBmAezDqLAYwAWmcZbBzax1MI0wANWC9KWluIkcEsiVlAAUwF089XXU4TGVMRCCbdXtZRL5FKQdyipxkjW09QxMi21L4xIBfMsxujt4ewTJaAB4jYAA+CKjdKS5HYgBIRcrU9LgITyNTHDtqhNwcbA58Hrkz2uS0lw2tluY9i95D48xmfYX+x1Xr2+3MWiPL7yHBHVAcWgfc7Ay4qAByLkwAFs3OpWnogXI+p0gA===" target="_blank">yield return with foreach (SharpLab)</a>.
+
+    The sequence stops at the end of the method, or at first `yield break`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/iterators
+  match: [YieldReturnStatement, YieldBreakStatement]
+
 # C# 3
 
 - name: lambda expression
