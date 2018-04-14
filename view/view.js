@@ -1,9 +1,9 @@
 (async () => {
     const body = document.getElementsByTagName('body')[0];
     const title = (document.getElementsByTagName('title')[0]).innerText;
-    const yamlUrl = '/' + body.dataset.source;
+    const yamlUrl = body.dataset.source;
 
-    const template = await (await fetch('/view/view.template.html')).text();
+    const template = await (await fetch('view/view.template.html')).text();
     const yaml = await (await fetch(yamlUrl)).text();
 
     const items = jsyaml.safeLoad(yaml);
