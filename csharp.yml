@@ -10,7 +10,7 @@
     Finalizers (or destructors) are methods automatically called by Garbage Collector before collecting the object.  
     They are used for last-chance cleanup of unmanaged resources (e.g. files) or memory.
 
-    Also see `IDisposable` \[[Docs](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/dispose-pattern)\] for a predictables cleanup approach.
+    Also see `IDisposable` \[[Docs](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/dispose-pattern)\] for a predictable cleanup approach.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/destructors
   match: [DestructorDeclaration]
 
@@ -58,7 +58,7 @@
     However, instead of all values at once, they return the values one by one.
 
     Each `yield return` returns one value, and "pauses" the method until calling code asks for more.  
-    For example: <a href="https://sharplab.io/#v2:C4LgTgrgdgNAJiA1AHwAIAYAEqCMBuAWACgNscAWQo41AZjIDZsAmMgdkwG9jNft7cTVOTIAOABQBKLjz5zcATnEAiAEoBTAI4R1AZ2ABLKAHNMANwCGAGx3LJVOXIBmAezDqLAYwAWmcZbBzax1MI0wANWC9KWluIkcEsiVlAAUwF089XXU4TGVMRCCbdXtZRL5FKQdyipxkjW09QxMi21L4xIBfMsxujt4ewTJaAB4jYAA+CKjdKS5HYgBIRcrU9LgITyNTHDtqhNwcbA58Hrkz2uS0lw2tluY9i95D48xmfYX+x1Xr2+3MWiPL7yHBHVAcWgfc7Ay4qAByLkwAFs3OpWnogXI+p0gA===" target="_blank">yield return with foreach (SharpLab)</a>.
+    For example: <a href="https://sharplab.io/#v2:C4LgTgrgdgNAJiA1AHwAIAYAEqCMBuAWACgNscAWQo41AZjIDZsAmMgdkwG9jNft7cTVOTIAOABQBKLjz5zcATnEAiAEoBTAI4R1AZ2ABLKAHNMANwCGAGx3LJVOXIBmAezDqLAYwAWmcZbBzax1MI0wANWC9KWluIkcEsiVlAAUwF089XXU4TGVMRCCbdXtZRL5FKQdyipxkjW09QxMi21L4xIBfMsxujt4ewTJaAB4jYAA+CKjdKS5HYgBIRcrU9LgITyNTHDtqhNwcbA58Hrkz2uS0lw2tluY9i95D48xmfYX+x1Xr2+3MWiPL7yHBHVAcWgfc7Ay4qAByLkwAFs3OpWnogXI+p0gA===" target="_blank">yield return with foreach</a> (SharpLab).
 
     The sequence stops at the end of the method, or at first `yield break`.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/iterators
