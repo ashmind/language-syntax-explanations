@@ -32,7 +32,7 @@
     Generic constraints require types used by the generic to match a certain condition.
 
     For example, `C<T> where T: struct` means that only value types will be allowed as `T`.  
-    In this case, you can use `C<int>` and `C<byte>` -- but not `C<string>`.
+    In this case, you can use `C<int>` and `C<byte>` — but not `C<string>`.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters
   match: [TypeParameterConstraintClause]
 
@@ -70,6 +70,19 @@
   text: "Lambda expressions are a kind of anonymous functions — blocks of code that can be passed around."
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions
   match: [ParenthesizedLambdaExpression, SimpleLambdaExpression]
+
+
+- name: anonymous type
+  text: |
+    Syntax `new {}` creates an object that has specified properties, but doesn't have a named type.
+
+    Since there is no type, these objects are mostly used with `var`.  
+    As methods can't have `var` returns or parameters, anonymous types are often defined and used within the same method.
+
+    In modern C#, _tuples_ provide similar features  — and can be used for returns and parameters.  
+    For example, `new { a = 1, b = 2 }` can often be rewritten as a tuple: `(a: 1, b: 2)`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types
+  match: [AnonymousObjectCreationExpression]
 
 # C# 6
 
