@@ -14,9 +14,12 @@
     });
     const render = vash.compile(template);
 
-    vash.helpers.id = s => s.replace(/[^A-Za-z]/g, '-');
     vash.helpers.markdown = s => vash.helpers.raw(marked(s));
-    body.innerHTML = render({ title, items });
+    body.innerHTML = render({
+        title,
+        items,
+        linkText: u => u.replace(/^https:\/\/docs.microsoft.com\/en-us\/dotnet\/csharp\//, '')
+    });
 
     setTimeout(() => {
         const hash = window.location.hash;

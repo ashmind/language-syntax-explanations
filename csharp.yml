@@ -131,6 +131,23 @@
 #   match: [VarianceKeyword]
 #   scope: parent
 
+# C# 5
+
+- name: asynchronous programming
+  text: |
+    Keyword `async` specifies that a method is asynchronous and can use `await`.  
+    Keyword `await` allows remaining part of the method to be postponed until a certain operation completes.
+
+    For example
+    ```
+    var x = await File.ReadAllTextAsync("file.txt");
+    Console.WriteLine(x);
+    ```
+    postpones `Console.WriteLine` until the file is read.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/async
+  match: [AsyncKeyword]
+  scope: parent
+
 # C# 6
 
 - name: expression-bodied member

@@ -80,5 +80,6 @@ p:last-child {
 }
 
 .docs-link {
-    margin-left: 10px;
+    display: block;
+    margin-top: 10px;
 }
