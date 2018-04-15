@@ -172,6 +172,18 @@
   match: [ArrowExpressionClause]
   scope: parent
 
+- name: null-conditional operator
+  text: |
+    There are two similar null-conditional operators, `?.` and `?[]`.
+
+    Syntax `a?.b.c` returns `a.b.c` if `a` is not `null`, and `null` otherwise.  
+    Any methods to the right of `a?.` are also only called if `a` is not `null`.  
+    For example, `logger?.Log();` only calls `Log()` if `logger` is not `null`.
+
+    Syntax `a?[0].b` returns `a[0].b` if `a` is not `null`, and `null` otherwise.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-conditional-operator
+  match: [ConditionalAccessExpression]
+
 - name: string interpolation
   text: |
     String interpolation allows values to be placed directly into a string using `{}`.  
