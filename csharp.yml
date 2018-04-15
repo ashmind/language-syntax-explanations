@@ -5,7 +5,20 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-complement-operator
   match: [BitwiseNotExpression]
 
-- name: finalizer 
+- name: params parameter
+  text: |
+    Keyword `params` allows the parameter to collect all remaining values passed into the method.  
+    For example, `M(int a, int b, params int[] c)` called as `M(1, 2, 3, 4, 5)` will receive
+    ```
+    a: 1
+    b: 2
+    c: 3, 4, 5
+    ```
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/params
+  match: [ParamsKeyword]
+  scope: parent
+
+- name: finalizer
   text: |
     Finalizers (or destructors) are methods automatically called by Garbage Collector before collecting the object.  
     They are used for last-chance cleanup of unmanaged resources (e.g. files) or memory.
