@@ -65,6 +65,15 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/nullable-types/index
   match: [NullableType]
 
+- name: null-coalescing operator
+  text: |
+    Syntax `a ?? b` returns `a` if its not `null`, otherwise `b` (whether it's `null` or not).  
+
+    Note that everything to the right of `??` is only calculated if left is `null`.  
+    So `a ?? M()` only calls `M()` if `a` is `null`, similar to `||` and `&&`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-conditional-operator
+  match: [CoalesceExpression]
+
 - name: iterator syntax
   text: |
     Iterator methods return `IEnumerable`, which is a sequence of values.  
