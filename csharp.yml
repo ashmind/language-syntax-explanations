@@ -48,6 +48,13 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/unsafe-code-pointers/how-to-access-a-member-with-a-pointer
   match: [PointerMemberAccessExpression]
 
+- name: address-of operator
+  text: |
+    Syntax `&a` is used to obtain a unsafe pointer to a value `a`.  
+    For example, after `int* p = &a;` pointer `p` will be a reference to `a`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/unsafe-code-pointers/how-to-obtain-the-address-of-a-variable
+  match: [AddressOfExpression]
+
 # C# 2
 
 - name: generic
