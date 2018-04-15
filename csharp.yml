@@ -39,6 +39,15 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/unsafe-code-pointers/pointer-types
   match: [PointerType]
 
+- name: pointer member access
+  text: |
+    Syntax `a->b` is used to access a member of type `A` through pointer type `A*`.
+
+    For example, let's say `dt` is `DateTime` and `pdt` is `DateTime*` pointing to it.  
+    In this case, `dt.Year` can also be accessed using `pdt->Year`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/unsafe-code-pointers/how-to-access-a-member-with-a-pointer
+  match: [PointerMemberAccessExpression]
+
 # C# 2
 
 - name: generic
