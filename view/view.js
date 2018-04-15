@@ -13,7 +13,14 @@
         return 0;
     });
     const render = vash.compile(template);
-    
+
+    vash.helpers.id = s => s.replace(/[^A-Za-z]/g, '-');
     vash.helpers.markdown = s => vash.helpers.raw(marked(s));
     body.innerHTML = render({ title, items });
+
+    setTimeout(() => {
+        const hash = window.location.hash;
+        window.location.hash = '';
+        window.location.hash = hash;
+    }, 0);
 })();
