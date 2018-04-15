@@ -150,6 +150,11 @@
 
 # C# 6
 
+- name: exception filter
+  text: "Exception filters allow `catch` to happen only if exception matches a certain condition."
+  link: https://www.thomaslevesque.com/2015/06/21/exception-filters-in-c-6/
+  match: [CatchFilterClause]
+
 - name: expression-bodied member
   text: |
     Expression bodies are a compact way to represent simple single-line methods and properties.  
