@@ -27,6 +27,18 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/destructors
   match: [DestructorDeclaration]
 
+- name: pointer type
+  text: |
+    Pointer type is an unsafe unmanged reference.  
+    For example, `int*` is an unsafe reference to an `int` value.  
+    References can be nested, e.g. `int**` points to `int*`.
+
+    Special syntax `void*` is used for a reference to an unknown type.
+
+    Pointers are mostly used for talking to non-.NET code and special-case optimizations.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/unsafe-code-pointers/pointer-types
+  match: [PointerType]
+
 # C# 2
 
 - name: generic
