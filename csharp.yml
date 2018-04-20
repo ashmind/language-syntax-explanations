@@ -50,9 +50,14 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/destructors
   match: [DestructorDeclaration]
 
+- name: fixed statement
+  text: "This statement ensures that garbage collections will not invalidate an unsafe pointer."
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/fixed-statement
+  match: [FixedStatement]
+
 - name: pointer type
   text: |
-    Pointer type is an unsafe unmanged reference.  
+    Pointer type is an unsafe unmanaged reference.  
     For example, `int*` is an unsafe reference to an `int` value.  
     References can be nested, e.g. `int**` points to `int*`.
 
