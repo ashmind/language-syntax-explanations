@@ -5,6 +5,29 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-complement-operator
   match: [BitwiseNotExpression]
 
+- name: checked expression
+  text: |
+    Checked expression forces a calculation to be checked for overflow when executed.  
+    _Overflow_ is a situation when a value that exceeds type limits "loops back" on the other side.
+
+    For example
+    ```
+    var a = 10;
+    var b = int.MaxValue + a;          // overflow, b = -2147483639
+    var c = checked(int.MaxValue + a); // OverflowException
+    ```
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/checked
+  match: [CheckedExpression]
+
+- name: unchecked expression
+  text: |
+    Unchecked expression allows disables overflow checks for a calculation.  
+    _Overflow_ is a situation when a value that exceeds type limits "loops back" on the other side.
+
+    For example, `int.MaxValue + 10` doesn't compile, but `unchecked(int.MaxValue + 10)` produces `-2147483639`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/unchecked
+  match: [UncheckedExpression]
+
 - name: params parameter
   text: |
     Keyword `params` allows the parameter to collect all remaining values passed into the method.  
