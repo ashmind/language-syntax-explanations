@@ -83,6 +83,18 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/unsafe-code-pointers/how-to-obtain-the-address-of-a-variable
   match: [AddressOfExpression]
 
+- name: stack allocation expression
+  text: |
+    Expression `stackalloc` is used to allocate memory on the stack.  
+    This is mostly unsafe and requires `unsafe` keyword to be added to the method.
+    
+    However since C# 7.2 you can use `stackalloc` safely with `Span<T>`, for example:
+    ```
+    Span<byte> stackSpan = stackalloc byte[100];
+    ```
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/stackalloc
+  match: [StackAllocArrayCreationExpression]
+
 # C# 2
 
 - name: generic
