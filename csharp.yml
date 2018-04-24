@@ -9,7 +9,7 @@
   text: |
     Remainder operator calculates the remainder of division between two values.  
     For example, `7 % 3` is `1` because `7` is `(2 * 3) + 1`.
-  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-complement-operator
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/remainder-operator
   match: [ModuloExpression]
 
 - name: checked expression
