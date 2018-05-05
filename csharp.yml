@@ -124,10 +124,19 @@
 
 - name: partial type
   text: |
-    Partial types allow type definition to be split into multiple parts, most often in separate files.  
+    Keyword `partial` allows type definition to be split into multiple parts, most often in separate files.  
     All parts must be within the same project — when the project is built all parts are combined.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods#partial-classes
   path: ClassDeclaration[PartialKeyword] || InterfaceDeclaration[PartialKeyword] || StructDeclaration[PartialKeyword]
+
+- name: partial method
+  text: |
+    Partial method is an empty method that can be redefined somewhere else, most often in another file.
+
+    For example, a code generator might generate `partial void OnSave()` and call it in the generated `Save` method.  
+    This gives the developer a chance to add their own logic by defining `OnSave` outside of the generated code.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods#partial-methods
+  path: MethodDeclaration[PartialKeyword]
 
 - name: anonymous method
   text: |

@@ -25,6 +25,9 @@ a {
 
 code {
     font-family: Consolas, Menlo, Monaco, monospace;
+}
+
+.text code {
     background-color: #efefef;
     padding: 1px 5px;
 }
@@ -67,7 +70,7 @@ section header {
     margin-bottom: 10px;
 }
 
-.text {
+section .content {
     padding-left: 20px;
 }
 
@@ -79,7 +82,6 @@ p:last-child {
     margin-bottom: 0;
 }
 
-.docs-link {
-    display: block;
-    margin-top: 10px;
+.text {
+    margin-bottom: 10px;
 }

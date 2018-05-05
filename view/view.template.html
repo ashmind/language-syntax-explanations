@@ -12,11 +12,14 @@
   @for (const item of model.items) {
   <section id="@(item.name.replace(/[^A-Za-z]/g, '-'))">
     <header><dfn>@item.name</dfn></header>
-    <div class="text">
-      @html.markdown(item.text)
+    <div class="content">
+      <div class="text">
+        @html.markdown(item.text)
+      </div>
       <div class="docs-link">
         Docs: <a href="@item.link" target="_blank">@(model.linkText(item.link))</a>
       </div>
+      <div>Path: <code>@item.path</code></div>
     </div>
   </section>
   }
