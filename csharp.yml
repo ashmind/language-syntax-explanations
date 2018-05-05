@@ -186,11 +186,6 @@
 
 # C# 3
 
-- name: lambda expression
-  text: "Lambda expressions are a kind of anonymous functions — blocks of code that can be passed around."
-  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions
-  path: ParenthesizedLambdaExpression || SimpleLambdaExpression
-
 - name: anonymous type
   text: |
     Syntax `new {}` creates an object that has specified properties, but doesn't have a named type.
@@ -218,6 +213,18 @@
     Query expressions are a part of LINQ — however not all LINQ methods support special syntax.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/linq/query-expression-basics
   path: QueryExpression
+
+- name: lambda expression
+  text: "Lambda expressions are a kind of anonymous functions — blocks of code that can be passed around."
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions
+  path: ParenthesizedLambdaExpression || SimpleLambdaExpression
+
+- name: extension method
+  text: |
+    Extension methods are static methods that can be called as if they were instance methods of a different type.  
+    For example, `static void M(this string s)` can be called from any `string`, such as `"abc".M()`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods
+  path: MethodDeclaration[ParameterList[Parameter[ThisKeyword]]]
 
 # C# 4
 
