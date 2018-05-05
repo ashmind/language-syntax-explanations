@@ -122,6 +122,13 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters
   path: TypeParameterConstraintClause
 
+- name: partial type
+  text: |
+    Partial types allow type definition to be split into multiple parts, most often in separate files.  
+    All parts must be within the same project — when the project is built all parts are combined.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods#partial-classes
+  path: ClassDeclaration[PartialKeyword] || InterfaceDeclaration[PartialKeyword] || StructDeclaration[PartialKeyword]
+
 - name: anonymous method
   text: |
     Anonymous methods are blocks of code that can be passed around.  
