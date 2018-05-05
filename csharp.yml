@@ -228,22 +228,20 @@
 
 # C# 4
 
-# Needs a better matcher
-# - name: generic variance
-#   text: |
-#     Generics can declare types they use as _invariant_ (no modifier), _covariant_ (`out`) or _contravariant_ (`in`).  
-#     These modifiers specify whether generic types are compatible if they use compatible types.
+- name: generic variance
+  text: |
+    Generics can declare types they use as _invariant_ (no modifier), _covariant_ (`out`) or _contravariant_ (`in`).  
+    These modifiers specify whether generic types are compatible if they use compatible types.
 
-#     For example, let's say there are types `Fruit`, and `Apple` that inherits from `Fruit`.  
+    For example, let's say there are types `Fruit`, and `Apple` that inherits from `Fruit`.  
 
-#     Type `IProducer<out T>` is covariant, so it allows cast from `IProducer<Apple>` to `IProducer<Fruit>`.  
-#     Producing `Apple` produces `Fruit`, however producing `Fruit` does not guarantee to produce `Apple`.
+    Type `IProducer<out T>` is covariant, so it allows cast from `IProducer<Apple>` to `IProducer<Fruit>`.  
+    Producing `Apple` produces `Fruit`, however producing `Fruit` does not guarantee to produce `Apple`.
 
-#     Type `IConsumer<in A>` is contravariant,  so it allows cast from `IConsumer<Fruit>` to `IConsumer<Apple>`.  
-#     Consumer of `Fruit` can consume `Apple`, however consumer of `Apple` can't consume other types of `Fruit`. 
-#   link: https://docs.microsoft.com/en-us/dotnet/standard/generics/covariance-and-contravariance
-#   match: [VarianceKeyword]
-#   scope: parent
+    Type `IConsumer<in A>` is contravariant,  so it allows cast from `IConsumer<Fruit>` to `IConsumer<Apple>`.  
+    Consumer of `Fruit` can consume `Apple`, however consumer of `Apple` can't consume other types of `Fruit`. 
+  link: https://docs.microsoft.com/en-us/dotnet/standard/generics/covariance-and-contravariance
+  path: TypeParameter[InKeyword] || TypeParameter[OutKeyword]
 
 # C# 5
 
