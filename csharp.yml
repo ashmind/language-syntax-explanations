@@ -369,3 +369,9 @@
     Custom structs with `Span<T>` fields are also required to be `ref struct`.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/reference-semantics-with-value-types#ref-struct-type
   path: StructDeclaration[RefKeyword]
+
+# - name: declaration with a private protected access modifier
+#   text: |
+#     TODO
+#   link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private-protected
+#   path: *[PrivateKeyword && ProtectedKeyword]
