@@ -35,6 +35,15 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/unchecked
   path: UncheckedExpression
 
+- name: method with a 'new' modifier 
+  text: |
+    Keyword `new` on a method is used to hide an inherited method with the same name.  
+    This is a relatively uncommon pattern — most often the method is redefined using `override`.
+
+    However it is applicable in special cases, for example when the method return type must be redefined.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/new-modifier
+  path: MethodDeclaration[NewKeyword]
+
 - name: params parameter
   text: |
     Keyword `params` allows the parameter to collect all remaining values passed into the method.  
