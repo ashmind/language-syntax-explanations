@@ -270,6 +270,13 @@
 
 # C# 6
 
+- name: static import
+  text: |
+    Static imports allow static methods/properties/etc to be used without a type name.  
+    For example, `using static System.Console` allows `WriteLine("abc")` without `Console.`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-static
+  path: UsingDirective[StaticKeyword]
+
 - name: exception filter
   text: "Exception filters allow `catch` to happen only if exception matches a certain condition."
   link: https://www.thomaslevesque.com/2015/06/21/exception-filters-in-c-6/
