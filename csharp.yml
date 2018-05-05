@@ -346,6 +346,8 @@
 # TODO: ref structs and so on (needs better matching, maybe SourcePath)
 
 - name: in parameter
-  text: "In parameters are in essence `ref readonly` — passed by reference, but cannot be changed by the method."
+  text: |
+    In parameters are in essence `ref readonly` — passed by reference, but cannot be changed by the method.  
+    The goal is often to improve performance, as passing large `struct` by reference is faster than copying a value.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/reference-semantics-with-value-types#passing-arguments-by-readonly-reference
   path: Parameter[InKeyword]
