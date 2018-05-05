@@ -315,6 +315,11 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/tuples
   path: TupleType || TupleExpression
 
+- name: deconstruction
+  text: "Deconstruction is a way to assign elements from a tuple or other type directly into variables."
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/deconstruct
+  path: SimpleAssignmentExpression[DeclarationExpression[ParenthesizedVariableDesignation] || TupleExpression[Argument[DeclarationExpression]]]
+
 - name: pattern matching
   text: |
     Pattern matching checks whether value matches a condition, and at the same time transforms it into new value(s).  
