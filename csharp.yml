@@ -360,3 +360,12 @@
     This allows their usages to be optimized, for example when used with `in` parameters.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/reference-semantics-with-value-types#readonly-struct-type
   path: StructDeclaration[ReadOnlyKeyword]
+
+- name: ref struct
+  text: |
+    Ref structs are guaranteed to be kept on stack and cannot be moved to the heap.  
+    Primary example of `ref` structs is `Span<T>` and similar types.
+
+    Custom structs with `Span<T>` fields are also required to be `ref struct`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/reference-semantics-with-value-types#ref-struct-type
+  path: StructDeclaration[RefKeyword]
