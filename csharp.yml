@@ -349,5 +349,14 @@
   text: |
     In parameters are in essence `ref readonly` — passed by reference, but cannot be changed by the method.  
     The goal is often to improve performance, as passing large `struct` by reference is faster than copying a value.
+
+    Note that passing non-`readonly` `struct` using `in` might cause an overhead — see the docs for details.
   link: https://docs.microsoft.com/en-us/dotnet/csharp/reference-semantics-with-value-types#passing-arguments-by-readonly-reference
   path: Parameter[InKeyword]
+
+- name: readonly struct
+  text: |
+    Readonly structs are verified to be readonly by the compiler.  
+    This allows their usages to be optimized, for example when used with `in` parameters.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/reference-semantics-with-value-types#readonly-struct-type
+  path: StructDeclaration[ReadOnlyKeyword]
