@@ -228,6 +228,15 @@
 
 # C# 4
 
+- name: named argument
+  text: |
+    When calling a method, argument names can be provided explictly as `name: value`.  
+    This is useful when only providing specific parameters (if others are optional).
+
+    Explicit names can also improve code clarity, e.g. `Process(all: true)` instead of `Process(true)`.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments#named-arguments
+  path: Argument[NameColon]
+
 - name: generic variance
   text: |
     Generics can declare types they use as _invariant_ (no modifier), _covariant_ (`out`) or _contravariant_ (`in`).  
