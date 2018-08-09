@@ -338,6 +338,13 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/tuples
   path: TupleType || TupleExpression
 
+- name: discard
+  text: |
+    Discards are used to ignore a value without using a temporary variable.  
+    For example, call `M(1, out var _)` ignores the value of the `out` parameter.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/discards
+  path: IdentifierName && SymbolKind:Discard
+
 - name: deconstruction
   text: "Deconstruction is a way to assign elements from a tuple or other type directly into variables."
   link: https://docs.microsoft.com/en-us/dotnet/csharp/deconstruct
