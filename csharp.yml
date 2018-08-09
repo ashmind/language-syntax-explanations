@@ -242,6 +242,15 @@
 
 # C# 4
 
+- name: dynamic type
+  text: |
+    Dynamic type suppresses compiler type checks, which allows use of types that are not known in advance.
+
+    This might be useful in some cases, such as JSON processing. However, any mistakes (such as misspellings)
+    might pass the compilation unnoticed and cause an exception later.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/dynamic
+  path: IdentifierName && SymbolKind:DynamicType
+
 - name: named argument
   text: |
     When calling a method, argument names can be provided explictly as `name: value`.  
