@@ -412,8 +412,7 @@
   link: https://docs.microsoft.com/en-us/dotnet/csharp/reference-semantics-with-value-types#ref-struct-type
   path: StructDeclaration[RefKeyword]
 
-# - name: declaration with a private protected access modifier
-#   text: |
-#     TODO
-#   link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private-protected
-#   path: *[PrivateKeyword && ProtectedKeyword]
+- name: declaration with a private protected access modifier
+  text: "Modifier `private protected` only allows access from child classes within the same assembly."
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private-protected
+  path: "*[PrivateKeyword && ProtectedKeyword]"
