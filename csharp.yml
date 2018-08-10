@@ -305,6 +305,13 @@
   link: https://www.thomaslevesque.com/2015/06/21/exception-filters-in-c-6/
   path: CatchFilterClause
 
+- name: nameof expression
+  text: |
+    While `"x"` and `nameof(x)` give the exact same result, `nameof` guarantees that `x` exists in code.  
+    For example, `throw new ArgumentNullException(nameof(a))` causes a compilation error if `a` does not exist.
+  link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/nameof
+  path: InvocationExpression && OperationKind:NameOf
+
 - name: expression-bodied member
   text: |
     Expression bodies are a compact way to represent simple single-line methods and properties.  
